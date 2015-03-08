@@ -6,6 +6,12 @@ public class WordAnalyzer {
     private String [] args = null;
     private String outputPath = null;
 
+    public WordAnalyzer (String inputPath, Integer minV, String outputPath) {
+        setInputFile(inputPath);
+        setMaxWordLength(minV);
+        setOutputPath(outputPath);
+    }
+
     public void setInputFile(String someFile) {
         someFile = "inputPath=" + someFile;
         args [0] = someFile;
@@ -34,9 +40,4 @@ public class WordAnalyzer {
 
         return result;
     }
-
-
-
-
-
 }
