@@ -14,7 +14,7 @@ public class NewParser {
         commandList.add(new ParameterDefiner(ParameterDefiner.MIN_VALUE, ParameterDefiner.INTEGER_TYPE, false));
     }
 
-    public static void main(String[] args) {
+    public static void executeParser (String[] args) {
 
         ArgsParser ap = new ArgsParser(args);
         userCommandList = ap.parseAndAddToList();
@@ -39,5 +39,4 @@ public class NewParser {
 
         System.out.println("Done!!!");
     }
-
 }
